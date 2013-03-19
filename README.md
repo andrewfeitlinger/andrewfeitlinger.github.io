@@ -1,4 +1,4 @@
 feitlinger.github.com
 =====================
 
-Repository for my GitHub User Pages
+Repository for my GitHub User Pages.
