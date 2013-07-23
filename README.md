@@ -1,4 +1,4 @@
-feitlinger.github.com
-=====================
+feitlinger.github.io
+====================
 
-Repository for my GitHub User Pages.
+Repository for my GitHub User Pages subdomain.
