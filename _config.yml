@@ -1,0 +1,4 @@
+name: Andrew Feitlinger
+exclude: ['README.md']
+timezone: UTC
+permalink: /blog/:year/:month/:day/:title
