@@ -12,8 +12,8 @@
     padding: 0;
 }
 
-html,
-body
+body,
+html
 {
     height: 100%;
 }
@@ -69,22 +69,22 @@ table
 
 /****************************************************************************/
 /*
-/* Home
+/* Home (updated with class selector)
 /*
 /****************************************************************************/
 
-ul.posts
+.home ul.posts
 {
     list-style-type: none;
     margin-bottom: 2em;
 }
 
-ul.posts li
+.home ul.posts li
 {
     line-height: 1.75em;
 }
 
-ul.posts span
+.home ul.posts span
 {
     color: #aaa;
     font-family: Monaco, "Courier New", monospace;
@@ -191,12 +191,6 @@ ul.posts span
     padding: 0 .4em;
 }
 
-.post ul,
-.post ol
-{
-    margin-left: 1.35em;
-}
-
 .post code
 {
     border: 1px solid #ddd;
@@ -223,14 +217,24 @@ ul.posts span
     background-color: #333;
 }
 
-/* custom */
+/****************************************************************************/
+/*
+/* Posts & Pages (custom)
+/*
+/****************************************************************************/
 
+/* blank line hack */
+
+.page hr,
 .post hr
 {
     margin: 1.5em 0;
     border: none;
 }
 
+/* tables */
+
+.page table,
 .post table
 {
     border-collapse: collapse;
@@ -238,6 +242,9 @@ ul.posts span
     border-bottom: 1px solid #000;
 }
 
+.page thead th,
+.page tbody td,
+.page tfoot td,
 .post thead th,
 .post tbody td,
 .post tfoot td
@@ -248,6 +255,9 @@ ul.posts span
     padding: 1em;
 }
 
+.page thead :not(tr:last-child),
+.page tbody :not(tr:last-child),
+.page tfoot :not(tr:last-child),
 .post thead :not(tr:last-child),
 .post tbody :not(tr:last-child),
 .post tfoot :not(tr:last-child)
@@ -255,6 +265,9 @@ ul.posts span
     border-bottom: none;
 }
 
+.page thead tr:last-child,
+.page tbody tr:last-child,
+.page tfoot tr:last-child,
 .post thead tr:last-child,
 .post tbody tr:last-child,
 .post tfoot tr:last-child
@@ -262,6 +275,8 @@ ul.posts span
     border-bottom: 1px solid #000;
 }
 
+.page thead,
+.page tfoot,
 .post thead,
 .post tfoot
 {
@@ -269,23 +284,42 @@ ul.posts span
     font-weight: bold;
 }
 
+.page tbody,
 .post tbody
 {
     background-color: #eee;
 }
 
-/****************************************************************************/
-/*
-/* Pages (Custom)
-/*
-/****************************************************************************/
+/* lists */
 
-ul.pages
+.page ol,
+.page ul,
+.post ol,
+.post ul
+{
+    margin-bottom: 1em;
+}
+
+.page ol,
+.post ol
+{
+    margin-left: 1.35em;
+}
+
+.page ul,
+.post ul
 {
     margin-left: 1.25em;
 }
 
-ul.pages li
+.page ol li,
+.post ol li
 {
     line-height: 1.65em;
+}
+
+.page ul li,
+.post ul li
+{
+    line-height: 1.75em;
 }
