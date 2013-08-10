@@ -182,7 +182,7 @@ table
 /*
 /****************************************************************************/
 
-/* standard */
+/* Standard */
 
 .post pre
 {
@@ -203,7 +203,7 @@ table
     border: none;
 }
 
-/* terminal */
+/* Terminal */
 
 .post pre.terminal
 {
@@ -219,32 +219,80 @@ table
 
 /****************************************************************************/
 /*
-/* Posts & Pages (custom)
+/* Posts, Drafts, and Pages (custom)
 /*
 /****************************************************************************/
 
-/* blank line hack */
+/* Draft Date */
 
-.page hr,
+.home ul.posts span.draft
+{
+    color: #a00;
+    font-weight: bold;
+    font-family: Monaco, "Courier New", monospace;
+    font-size: 80%;
+}
+
+.site .draft
+{
+    color: #a00;
+    font-weight: bold;
+}
+
+/* Post and Draft Title Link */
+
+.site .post a
+{
+    text-decoration: none;
+}
+
+/* Double Blank Line Hack */
+
 .post hr
 {
-    margin: 1.5em 0;
+    margin: 2em 0;
     border: none;
 }
 
-/* tables */
+/* Lists */
 
-.page table,
+.post ol,
+.post ul
+{
+    margin-bottom: 1em;
+}
+
+.post ol
+{
+    margin-left: 1.35em;
+}
+
+.post ul
+{
+    margin-left: 1.25em;
+}
+
+.post ol li
+{
+    line-height: 1.65em;
+}
+
+.post ul li
+{
+    line-height: 1.75em;
+}
+
+/* Table */
+
 .post table
 {
     border-collapse: collapse;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
-.page thead th,
-.page tbody td,
-.page tfoot td,
 .post thead th,
 .post tbody td,
 .post tfoot td
@@ -255,9 +303,6 @@ table
     padding: 1em;
 }
 
-.page thead :not(tr:last-child),
-.page tbody :not(tr:last-child),
-.page tfoot :not(tr:last-child),
 .post thead :not(tr:last-child),
 .post tbody :not(tr:last-child),
 .post tfoot :not(tr:last-child)
@@ -265,9 +310,6 @@ table
     border-bottom: none;
 }
 
-.page thead tr:last-child,
-.page tbody tr:last-child,
-.page tfoot tr:last-child,
 .post thead tr:last-child,
 .post tbody tr:last-child,
 .post tfoot tr:last-child
@@ -275,8 +317,6 @@ table
     border-bottom: 1px solid #000;
 }
 
-.page thead,
-.page tfoot,
 .post thead,
 .post tfoot
 {
@@ -284,42 +324,7 @@ table
     font-weight: bold;
 }
 
-.page tbody,
 .post tbody
 {
     background-color: #eee;
-}
-
-/* lists */
-
-.page ol,
-.page ul,
-.post ol,
-.post ul
-{
-    margin-bottom: 1em;
-}
-
-.page ol,
-.post ol
-{
-    margin-left: 1.35em;
-}
-
-.page ul,
-.post ul
-{
-    margin-left: 1.25em;
-}
-
-.page ol li,
-.post ol li
-{
-    line-height: 1.65em;
-}
-
-.page ul li,
-.post ul li
-{
-    line-height: 1.75em;
 }
