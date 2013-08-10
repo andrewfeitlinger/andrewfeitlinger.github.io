@@ -1,8 +1,9 @@
 name: Andrew Feitlinger
 exclude: ['README.md']
 timezone: UTC
-permalink: /posts/:year/:month/:day/:title
+show_drafts: nil
 pygments: true
+permalink: /posts/:year/:month/:day/:title
 markdown: kramdown
 kramdown:
     auto_ids: true
