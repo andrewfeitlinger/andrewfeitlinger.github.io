@@ -20,3 +20,75 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
 
 [jekyll-gh]: https://github.com/mojombo/jekyll
 [jekyll]:    http://jekyllrb.com
+
+---
+
+# Markdown Practice (kramdown)
+{:.no_toc}
+
+Here are some footnotes using kramdown syntax.
+
+The first footnote[^foot1] in a sentence.
+
+The second footnote[^foot2] in another sentence.
+
+[^foot1]: My first footnote. 
+
+[^foot2]: My second footnote. 
+
+---
+
+And here is an example of a table of contents. (**TODO:** Add CSS Magic)
+
+# Contents
+{:.no_toc}
+
+* TOC
+{:toc}
+
+# Chapter
+
+text
+
+## Section
+
+text
+
+### Subsection (configured to not diplay in TOC)
+
+text
+
+#### Subsubsection (configured to not diplay in TOC)
+
+text
+
+# Another Chapter
+
+text
+
+## Another Section
+
+text
+
+---
+
+And here is a table combining kramdown syntax and some CSS magic.
+
+|-----------------|-------------|-----------------|----------------|
+| Default aligned | Left aligned| Center aligned  | Right aligned  |
+| Second line     | a           | a               | a              |
+|-----------------|:------------|:---------------:|---------------:|
+| First body part | Second cell | Third cell      | Fourth cell    |
+| Second line     | a           | a               | a              |
+| Third line      | a           | a               | a              |
+|-----------------|-------------|-----------------|----------------|
+| Second body     | a           | a               | a              |
+| Second line     | a           | a               | a              |
+|-----------------|-------------|-----------------|----------------|
+| Third body      | a           | a               | a              |
+|=================|=============|=================|================|
+| Footer row      | Footer row  | Footer row      | Footer row     |
+| Second line     | a           | a               | a              |
+|-----------------|-------------|-----------------|----------------|
+
+
