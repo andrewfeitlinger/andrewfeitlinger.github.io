@@ -50,9 +50,9 @@
 {
     font-size: 115%;
     line-height: 1.5em;
-    margin: 2em auto 2em auto;
+    margin: 2em auto 2em 2em;
     text-align: justify;
-    width: 50%;
+    width: 85%;
 }
 
 .site .header a
@@ -113,17 +113,17 @@
 {
     border-top: 4px solid #ddd;
     color: #666;
-    font-size: 85%;
+    font-size: 75%;
     margin-top: 2em;
     overflow: visible;
+    width: 100%;
 }
 
 .site .footer .contact
 {
     float: left;
     margin-left: -2px;
-    margin-right: 3em;
-    margin-top: 1em;
+    margin-right: 1.5em;
 }
 
 .site .footer .contact a
@@ -167,7 +167,9 @@
 {
     background-color: #eef;
     border: 1px solid #ddd;
+    font-size: 100%;
     padding: 0 .4em;
+    width: auto;
 }
 
 .post code
@@ -176,6 +178,7 @@
     border: 1px solid #ddd;
     font-size: 100%;
     padding: 0 .2em;
+    width: auto;
 }
 
 .post pre code
@@ -197,7 +200,7 @@
     background-color: #333;
 }
 
-/* Title Link (Post and Draft) */
+/* Links */
 
 .post a.title
 {
@@ -215,6 +218,16 @@
     border-radius: 6px;
     color: #fef;
     padding: 4px;
+}
+
+.post a
+{
+    color: #00a;
+}
+
+.post a:hover
+{
+    text-decoration: none;
 }
 
 /* Double Blank Line Hack */
