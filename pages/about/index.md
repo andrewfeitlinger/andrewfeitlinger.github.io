@@ -25,3 +25,5 @@ This website was developed with the following technologies, either directly or i
 * [Sublime Text Package Control](http://wbond.net/sublime_packages/package_control/){:target="_blank"}
 * [TortoiseGit](https://code.google.com/p/tortoisegit/){:target="_blank"}
 * [YAML](http://yaml.org/){:target="_blank"}
+
+...and of course HTML and CSS
