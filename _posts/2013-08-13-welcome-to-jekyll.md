@@ -47,7 +47,7 @@ Check out the [Jekyll docs][jekyll]{:target="_blank"} for more info on how to ge
 
 **Markdown Practice (kramdown)**
 
-Here are some footnotes using [kramdown syntax](http://kramdown.rubyforge.org/syntax.html#tables){:target="_blank"} and some CSS "Magic".
+Here are some footnotes using [kramdown syntax](http://kramdown.rubyforge.org/syntax.html){:target="_blank"} and some CSS "Magic".
 
 The first footnote[^foot1] in a sentence.
 
@@ -59,7 +59,7 @@ The second footnote[^foot2] in another sentence.
 
 ---
 
-And here is an example of a table of contents combining kramdown syntax and some more CSS "Magic".
+Here is an example of a table of contents combining kramdown syntax and more CSS "Magic".
 
 **Contents**
 
