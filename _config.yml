@@ -1,7 +1,7 @@
 name: Andrew Feitlinger
-exclude: ['README.md']
+exclude: ['CNAME', 'README.md']
 timezone: UTC
-show_drafts: nil
+show_drafts: true
 pygments: true
 permalink: /posts/:year/:month/:day/:title
 markdown: kramdown
@@ -10,5 +10,5 @@ kramdown:
     footnote_nr: 1
     entity_output: as_char
     toc_levels: 1..2
-    smart_quotes: lsquo,rsquo,ldquo,rdquo
+    smart_quotes: 'lsquo,rsquo,ldquo,rdquo'
     use_coderay: false
