@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About This Website
+title:  About This Website
 ---
 
 This website was developed with the following technologies, either directly or indirectly.
