@@ -97,12 +97,22 @@ h5
 
 /* Custom: Table Of Contents */
 
-ul
+#markdown-toc
 {
     counter-reset: counter_l1;
 }
 
-ul:nth-child(2)
+#markdown-toc ul:nth-child(2)
 {
     counter-reset: counter_l2;
+}
+
+#markdown-toc ul:nth-child(2) ul:nth-child(2)
+{
+    counter-reset: counter_l3;
+}
+
+#markdown-toc ul:nth-child(2) ul:nth-child(2) ul:nth-child(2)
+{
+    counter-reset: counter_l4;
 }
