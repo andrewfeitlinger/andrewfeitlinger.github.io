@@ -50,9 +50,9 @@
 {
     font-size: 115%;
     line-height: 1.5em;
-    margin: 2em auto 2em 2em;
+    margin: 2em auto 2em auto;
     text-align: justify;
-    width: 85%;
+    width: 42em;
 }
 
 .site .header a
@@ -111,9 +111,8 @@
 
 .site .footer
 {
-    border-top: 4px solid #ddd;
-    color: #666;
-    font-size: 75%;
+    border: double #aaa;
+    font-size: 85%;
     margin-top: 2em;
     overflow: visible;
     width: 100%;
@@ -230,12 +229,33 @@
     text-decoration: none;
 }
 
-/* Double Blank Line Hack */
+/* Horizontal Line */
 
 .post hr
 {
-    border: none;
-    margin: 2em 0;
+    border: solid #ddd;
+    height: 1px;
+    margin-bottom: 1em;
+}
+
+/* Blank Lines */
+
+.post p.blank2
+{
+    visibility: hidden;
+    line-height: 0em;
+}
+
+.post p.blank3
+{
+    visibility: hidden;
+    line-height: 1em;
+}
+
+.post p.blank4
+{
+    visibility: hidden;
+    line-height: 2em;
 }
 
 /* Footnotes */
@@ -306,6 +326,7 @@
 {
     border-left: 1px solid #000;
     border-right: 1px solid #000;
+    line-height: 0.5em;
     padding: 1em;
     vertical-align: top;
 }
@@ -322,6 +343,7 @@
 .post tfoot tr:last-child
 {
     border-bottom: 1px solid #000;
+    line-height: 0.5em;
 }
 
 .post thead,
@@ -348,20 +370,20 @@
     margin-right: 1em;
 }
 
-.post h1:before
+.post h1:not(.no_toc):before
 {
     counter-increment: counter_h1;
     content:    counter(counter_h1) " ";
 }
 
-.post h2:before 
+.post h2:not(.no_toc):before
 {
     counter-increment: counter_h2;
     content:    counter(counter_h1) "."
                 counter(counter_h2) " ";
 }
 
-.post h3:before 
+.post h3:not(.no_toc):before
 {
     counter-increment: counter_h3;
     content:    counter(counter_h1) "."
@@ -369,7 +391,7 @@
                 counter(counter_h3) " ";
 }
 
-.post h4:before 
+.post h4:not(.no_toc):before
 {
     counter-increment: counter_h4;
     content:    counter(counter_h1) "."
@@ -378,7 +400,7 @@
                 counter(counter_h4) " ";
 }
 
-.post h5:before 
+.post h5:not(.no_toc):before
 {
     counter-increment: counter_h5;
     content:    counter(counter_h1) "."
@@ -388,7 +410,7 @@
                 counter(counter_h5) " ";
 }
 
-.post h6:before 
+.post h6:not(.no_toc):before
 {
     counter-increment: counter_h6;
     content:    counter(counter_h1) "."
@@ -399,7 +421,7 @@
                 counter(counter_h6) " ";
 }
 
-/* Table Of Contents  */
+/* Table Of Contents */
 
 #markdown-toc ul
 {
@@ -412,6 +434,21 @@
     text-indent: -1.2em;
 }
 
+#markdown-toc ul li
+{
+    text-indent: -0.8em;
+}
+
+#markdown-toc ul ul li
+{
+    text-indent: 0.4em;
+}
+
+#markdown-toc ul ul ul li
+{
+    text-indent: 2.6em;
+}
+
 #markdown-toc li:before
 {
     color: #00a;
@@ -419,7 +456,7 @@
     margin-right: 1em;
 }
 
-#markdown-toc li:before /* should be [#markdown-toc ul li:before] but doesn't work */
+#markdown-toc li:before
 {
     counter-increment: counter_l1;
     content:    counter(counter_l1) " ";
@@ -430,6 +467,23 @@
     counter-increment: counter_l2;
     content:    counter(counter_l1) "."
                 counter(counter_l2) " ";
+}
+
+#markdown-toc ul:nth-child(2) ul:nth-child(2) li:before
+{
+    counter-increment: counter_l3;
+    content:    counter(counter_l1) "."
+                counter(counter_l2) "."
+                counter(counter_l3) " ";
+}
+
+#markdown-toc ul:nth-child(2) ul:nth-child(2) ul:nth-child(2) li:before
+{
+    counter-increment: counter_l4;
+    content:    counter(counter_l1) "."
+                counter(counter_l2) "."
+                counter(counter_l3) "."
+                counter(counter_l4) " ";
 }
 
 #markdown-toc a
@@ -449,4 +503,40 @@
     border-radius: 6px;
     color: #fef;
     padding: 4px;
+}
+
+/* Code Blocks */
+
+:not(.highlighttable) .highlight,   /* Pygments */
+.post .code                         /* CodeRay */
+{
+    margin-bottom: 1.75em;
+    padding-top: 0.5em;
+}
+
+/* Pygments */
+
+.post .highlighttable .linenodiv,
+.post .highlighttable .highlight
+{
+    margin-bottom: 0em;
+    padding-top: 0em;
+}
+
+.post .highlighttable .highlight
+{
+    margin-top: .5em;
+}
+
+/* CodeRay */
+
+:not(#coderay-noline) span.line-numbers
+{
+    margin-right: 1em;
+}
+
+#coderay-noline span.line-numbers
+{
+    visibility: hidden;
+    margin-left: -1.5em;
 }
