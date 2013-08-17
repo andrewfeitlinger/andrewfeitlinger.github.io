@@ -5,8 +5,6 @@ published:  true
 date:       2013-08-16
 ---
 
-{::options coderay_line_numbers="inline" /}
-
 *This document originally started as an edit of the sample post created from the initial Jekyll build, but "inquisitively" evolved into something unexpectedly more interesting, involved, and indepth.*
 
 *I moved this into the drafts section for right now. It is a work in progress. Changes are to be definitely expected.*
@@ -50,14 +48,14 @@ print_hi('Tom')
 
 ### Kramdown, CSS (CodeRay), and CSS (Custom)
 
-~~~ ruby
+~~~
 def print_hi(name)
   puts "Hi, #{name}"
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ~~~
-{: #coderay-noline}
+{: .language-ruby #coderay-noline}
 
 ## With Line Numbers
 
