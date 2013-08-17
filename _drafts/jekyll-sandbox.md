@@ -48,14 +48,20 @@ print_hi('Tom')
 
 ### Kramdown, CSS (CodeRay), and CSS (Custom)
 
-~~~
+CodeRay and Pygments can build together locally, but apparently not remotely. I decided to use Pygments because it has additional Liquid parameters (and more languages). I commented out the CodeRay block using the Kramdown `{::comment}` extension.
+
+{::comment}
+
+~~~ ruby
 def print_hi(name)
   puts "Hi, #{name}"
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ~~~
-{: .language-ruby #coderay-noline}
+{: #coderay-noline}
+
+{:/comment}
 
 ## With Line Numbers
 
@@ -86,7 +92,11 @@ public class HelloWorld
 
 #### Kramdown and CSS (CodeRay)
 
-~~~ ruby
+CodeRay and Pygments can build together locally, but apparently not remotely. I decided to use Pygments because it has additional Liquid parameters (and more languages). I commented out these CodeRay blocks using the Kramdown `{::comment}` extension.
+
+{::comment}
+
+~~~ java
 def print_hi(name)
   puts "Hi, #{name}"
 end
@@ -107,6 +117,8 @@ public class HelloWorld
 } // End Class
 ~~~
 
+{:/comment}
+
 ### Table Style
 
 #### Liquid and CSS (Pygments)
@@ -126,7 +138,9 @@ public class HelloWorld
 
 #### Kramdown and CSS (CodeRay)
 
-This can also be done, but is generated with a global setting. So either the noline and inline styles OR only the table style can be show.
+This can also be done, but is generated with a global setting. So either the noline and inline styles OR only the table style can be show. Of course, this fact is moot as per my comments above.
+
+These three settings worked with local builds, but apparently will not work with remote builds.
 
 `{::options coderay_line_numbers="nil" /}`
 
