@@ -514,6 +514,14 @@
 
 /* Pygments */
 
+.post .highlight span:first-child,              /* No Line Numbers */
+.post .highlight span:nth-child(2),             /* Line Numbers (Code) */
+.post .highlight .lineno:first-of-type,         /* Line Numbers (Inline) */
+.post .highlighttable .linenodiv:first-letter   /* Line Numbers (Table) */
+{
+    margin-left: -2px;  /* fixes 2px indent "glitch" on first line of code block */
+}
+
 .post .highlighttable .linenodiv,
 .post .highlighttable .highlight
 {
