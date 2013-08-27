@@ -226,6 +226,7 @@
 
 .post a:hover
 {
+    font-weight: bold;
     text-decoration: none;
 }
 
