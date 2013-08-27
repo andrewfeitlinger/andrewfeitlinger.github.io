@@ -2,7 +2,7 @@
 layout:     post
 title:      My Jekyll Configuration Settings
 published:  true
-date:       2013-08-16
+date:       2013-08-26
 ---
 
 *This originally was only a temporary page, but I decided to turn it into a properly formatted post.*
