@@ -2,7 +2,7 @@
 layout:     draft
 title:      Welcome To My Jekyll Sandbox
 published:  true
-date:       2013-08-16
+date:       2013-08-26
 ---
 
 *This document originally started as an edit of the sample post created from the initial Jekyll build, but "inquisitively" evolved into something unexpectedly more interesting, involved, and indepth.*
