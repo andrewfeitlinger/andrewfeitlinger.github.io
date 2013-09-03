@@ -1,47 +1,5 @@
 /****************************************************************************/
 /*
-/* Home
-/*
-/****************************************************************************/
-
-.home ul.posts
-{
-    list-style-type: none;
-    margin-bottom: 2em;
-}
-
-.home ul.posts li
-{
-    line-height: 1.75em;
-}
-
-.home ul.posts li a
-{
-    background-color: #fff;
-    border-radius: 6px;
-    color: #00a;
-    padding: 4px;
-    text-decoration: none;
-}
-
-.home ul.posts li a:hover
-{
-    background-color: #00a;
-    border-radius: 6px;
-    color: #fdf;
-    padding: 4px;
-}
-
-.home ul.posts span
-{
-    color: #888;
-    font-family: monaco, "courier new", monospace;
-    font-size: 85%;
-    font-weight: bold;
-}
-
-/****************************************************************************/
-/*
 /* Site
 /*
 /****************************************************************************/
@@ -152,6 +110,48 @@
 .site .footer .rss img
 {
     border: 0;
+}
+
+/****************************************************************************/
+/*
+/* Blog
+/*
+/****************************************************************************/
+
+.blog ul.posts
+{
+    list-style-type: none;
+    margin-bottom: 2em;
+}
+
+.blog ul.posts li
+{
+    line-height: 1.75em;
+}
+
+.blog ul.posts li a
+{
+    background-color: #fff;
+    border-radius: 6px;
+    color: #00a;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.blog ul.posts li a:hover
+{
+    background-color: #00a;
+    border-radius: 6px;
+    color: #fdf;
+    padding: 4px;
+}
+
+.blog ul.posts span
+{
+    color: #888;
+    font-family: monaco, "courier new", monospace;
+    font-size: 85%;
+    font-weight: bold;
 }
 
 /****************************************************************************/
@@ -308,6 +308,19 @@
 .post ul li
 {
     line-height: 1.75em;
+}
+
+.post dt
+{
+    font-weight: bold;
+    text-align: left; 
+}
+
+.post dd
+{
+    font-style: italic;
+    margin-bottom: 1em;
+    margin-left: 1em;
 }
 
 /* Tables */
