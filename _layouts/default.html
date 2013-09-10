@@ -21,6 +21,9 @@
         <!-- CSS: Syntax Highlighting -->
         <link rel="stylesheet" href="/css/syntax.css">
 
+        <!-- JS: Google Analytics -->
+        {% include analytics.html %}
+
     </head>
 
     <body>
@@ -29,35 +32,15 @@
 
             <div class="site">
 
-                <div class="header">
-                    <h1 class="title" title="home"><a href="/">{{ site.name }}</a></h1>
-                    <a class="extra" href="/blog/">blog</a>
-                    <a class="extra" href="/projects/">projects</a>
-                    <a class="extra" href="/about/">about</a>
-                </div>
+                {% include header.html %}
 
                 {{ content }}
 
-                <div class="footer">
-                    <div class="contact">
-                        <p>
-                            <a href="http://andrewfeitlinger.com" target="_blank">http://andrewfeitlinger.com</a>
-                            <br />
-                            <a href="mailto:&#34;Andrew Feitlinger&#34;&#60;email@andrewfeitlinger.com&#62;" target="_blank">email@andrewfeitlinger.com</a>
-                        </p>
-                    </div>
-                    <div class="contact">
-                        <p>
-                            <a href="http://linkedin.com/in/andrewfeitlinger" target="_blank">http://linkedin.com/in/andrewfeitlinger</a>    
-                            <br />
-                            <a href="https://github.com/andrewfeitlinger" target="_blank">http://github.com/andrewfeitlinger</a>
-                        </p>
-                    </div>
-                </div>
+                {% include footer.html %}
 
-            </div> <!-- site -->
+            </div>
 
-        </div> <!-- container -->
+        </div>
 
     </body>
 
